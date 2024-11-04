@@ -1,0 +1,35 @@
+
+<h3 id="aw"> Na, doppel Brüche waren doch schon immer dein Ding, oder? </h3>
+
+<br> <br> <br>
+
+<form id="fo">
+
+	<input  name="tuerchen" value="9" type="hidden">
+
+	<input name="password" type="text" placeholder="Was ist die Lösung der Gleichung">
+
+	<input type="submit" value="Eingabe">
+</form>
+
+	<script>
+
+		var pw = window.location.search.split("&")[1].split("=")[1];
+		
+		if (pw.toLocaleLowerCase().trim() == "ilovu") {
+			document.getElementById("aw").innerHTML = `
+
+			`;
+			fo.style.display = "none";
+		} else if(pw.toLocaleLowerCase().trim() != "") {
+			document.getElementById("aw").innerHTML += "<br> Leider falsch. Ich bin entsetzt! Versuch es nochmal.";
+		}
+
+
+	</script>
+
+
+<script>
+
+
+</script>
